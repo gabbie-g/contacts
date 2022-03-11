@@ -11,7 +11,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "*, ::after, ::before {\n    box-sizing: border-box;\n  }\n\nbody {\n    background: linear-gradient(45deg, #fdfcfc, #d2cfcf);\n}\n\napp-root {\n    height     : 100vh;\n    display    : block;\n}\n", "",{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;EACxB;;AAEF;IACI,oDAAoD;AACxD;;AAEA;IACI,kBAAkB;IAClB,kBAAkB;AACtB","file":"styles.css","sourcesContent":["*, ::after, ::before {\n    box-sizing: border-box;\n  }\n\nbody {\n    background: linear-gradient(45deg, #fdfcfc, #d2cfcf);\n}\n\napp-root {\n    height     : 100vh;\n    display    : block;\n}\n"]}]);
+exports.push([module.i, "\nbody {\n    background: linear-gradient(45deg, #fdfcfc, #d2cfcf);\n}\n\napp-root {\n    height     : 100vh;\n    display    : block;\n}\n", "",{"version":3,"sources":["styles.css"],"names":[],"mappings":";AACA;IACI,oDAAoD;AACxD;;AAEA;IACI,kBAAkB;IAClB,kBAAkB;AACtB","file":"styles.css","sourcesContent":["\nbody {\n    background: linear-gradient(45deg, #fdfcfc, #d2cfcf);\n}\n\napp-root {\n    height     : 100vh;\n    display    : block;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
