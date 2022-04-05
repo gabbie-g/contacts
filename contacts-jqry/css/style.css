@@ -7,8 +7,8 @@
   }
   
   body{
-    background: linear-gradient(200deg, #fdfcfc, #d2cfcf);
-    height: 100vh;
+    background  : linear-gradient(45deg,#d3dfe6,#a3cfd7);
+    height      : 100vh;
   }
   
   #app-container{
