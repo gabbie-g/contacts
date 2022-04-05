@@ -1,0 +1,303 @@
+  :root{
+    --light-background-color    : rgb(245, 245, 245);
+    --input-background-color    : rgb(235, 235, 235);
+    --dark-background-color     : rgb(216, 216, 219);
+    --darker-background-color   : rgb(180, 180, 180);
+    --dark-color                : rgb(150, 150, 150);
+  }
+  
+  body{
+    background: linear-gradient(200deg, #fdfcfc, #d2cfcf);
+    height: 100vh;
+  }
+  
+  #app-container{
+    height      : 95%;
+    width       : 100%;
+    max-width   : 490px;
+    margin      : auto;
+    position    : absolute;
+    top         : 50%;
+    left        : 50%;
+    transform   : translate(-50%, -50%);
+    box-shadow  : 0 0 3px 3px var(--dark-background-color);
+    color       : rgb(110, 110, 110);
+    border-radius   : 10px;
+    background-color: white;
+}
+
+/**********************HEADER**********************/
+header{
+    background-color        : var(--light-background-color);
+    border-top-right-radius : 10px;
+    border-top-left-radius  : 10px;
+    overflow                : hidden;
+    flex-shrink             : 0;
+}
+header div:first-child{
+    height  : 81px;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+header span{
+    font-size: 24px;
+}
+.fa-search{
+    position    : absolute;
+    right       : 8px;
+    font-size   : 23px;
+    margin-top  : 6px;
+    padding     : 6px;
+    color       : var(--darker-background-color);
+    cursor      : pointer;
+    border-radius: 6px;
+}
+.fa-search:hover{
+    background-color: var(--dark-background-color);
+}
+.search{
+    border          : none;
+    border-radius   : 4px;
+    margin-right    : 15px;
+    font-size       : 14px;
+}
+.search:hover, .search:focus, .search:active{
+    outline : none;
+    border  : none;
+}
+.close-search-field{
+    width   : 32px;
+    height  : 26px;
+    padding-left    : 8px;
+    padding-right   : 8px;
+    color           : var(--darker-background-color);
+    border-radius   : 4px;
+    font-size       : 20px;
+    font-weight     : 600;
+}
+.close-search-field::before{
+    margin: auto;
+}
+.close-search-field:hover{
+    background-color: var(--dark-background-color);
+}
+.show{
+    display: flex;
+    padding: 0 9px 12px 16px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+.hide{
+    display: none;
+}
+
+/*************************BODY*********************/
+
+#body{
+    flex-grow   : 1;
+    overflow-y  : scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+}
+#body>span:only-child{
+    display: block;
+}
+#body>span{
+    margin  : auto;
+    display : none;
+}
+
+/************************FOOTER******************/
+footer{
+    background-color: var(--light-background-color);
+    border-radius   : 0 0 10px 10px;
+    padding         : 6px 3px 6px 8px;
+    flex-shrink     : 0;
+    overflow: hidden;
+}
+.footer-container{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+ 
+}
+
+.name{
+    flex-basis: 20%;
+}
+
+footer input{
+    border          : none;
+    border-radius   : 6px;
+    background-color: var(--light-background-color);
+    width           : 0;
+}
+
+.content-footer{
+    font-size: 14px;
+    padding-right: 12px;
+}
+.input-field-containers{
+    flex-direction: column;
+}
+
+input:hover, input:focus, input:active{
+    outline : none;
+    border  : none;
+}
+.input-field-container{
+    padding-left: 8px;
+}
+footer i{
+    width: 22px;
+    color: var(--dark-color);
+}
+.fa-phone::before{
+    transform: rotate(90deg);
+}
+footer span{
+    cursor      : pointer;
+    margin      : auto;
+    font-weight : bold;
+    font-size: 16px;
+    color       : var(--dark-color);
+    padding     : 6px;
+}
+footer span:hover{
+    background-color: var(--dark-background-color);
+    border-radius: 6px;
+}
+footer div:last-child{
+    padding-left: 6px;
+}
+
+.warning{
+    color: #dc3545;
+}
+
+/**********************ELEMENT********************/
+
+.element-body{
+    margin-left     : 16px;
+    margin-right    : 16px;
+    border-bottom   : 1px solid var(--dark-background-color);
+}
+
+.initial{
+    width           : 50px;
+    height          : 50px;
+    border-radius   : 50%;
+    color           : white;
+    cursor          : pointer;
+    margin          : auto;
+}
+.initial span{
+    margin: auto;
+}
+.initial:hover{
+    filter: invert(1);
+    color: black;
+}
+.fa-trash{
+    margin  : auto;
+    width   : 19px;
+    cursor  : pointer;
+    color   : var(--dark-background-color);
+}
+.fa-trash::before{
+    font-size: 22px;
+}
+.fa-trash:hover{
+    color: var(--darker-background-color);
+}
+
+.element:first-child{
+    font-weight: 600;
+}
+.element:nth-child(2){
+    margin-top: -7px;
+}
+.element:last-child{
+    margin-top: -5px;
+}
+textarea{
+    overflow-y  : scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+}
+
+@media (min-width:414px){
+    header div:first-child{
+        height: 76px;
+    }
+    header span{
+        font-size: 28px;
+    }
+    .number{
+        padding-left: 16px;
+        margin-top  : 0;
+    }
+    .input-field-containers{
+        flex-direction  : row;
+        padding-bottom   : 8px;
+    }
+    .element:last-child{
+        align-self  : flex-end;
+        margin-right: 16px;
+    }
+    footer{
+        padding: 8px 3px 8px 6px;
+    }
+    footer input{
+        background-color: var(--input-background-color);
+    }
+
+}
+
+
+.reminder{
+    border          :1px solid var(--dark-background-color);
+    border-radius   : 8px;
+    overflow        : hidden;
+    padding         : 8px 16px;
+    margin-bottom   : 8px;
+}
+.reminder span{
+    font-weight: 600;
+}
+.reminder .fa-times{
+    padding: 2px 6px;
+    color:rgb(150, 150, 150)
+}
+.reminder .fa-times::before{
+    margin: auto;
+}
+
+.fa-minus{
+    cursor: pointer;
+    color:rgb(150, 150, 150)
+}
+.content{
+    max-height: 120px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+    padding-right: 5px;
+}
+
+.reminder>div:first-child{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #e6e6e6 transparent;
+}
+
+::-webkit-scrollbar{
+    width: 1px;
+}
+
+::-webkit-scrollbar-button{
+    color: var(--darker-background-color);
+}
