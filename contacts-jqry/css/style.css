@@ -198,7 +198,6 @@ footer div:last-child{
 }
 .initial span{
     margin: auto;
-    padding-bottom: 3px;
 }
 .initial:hover{
     filter: invert(1);
